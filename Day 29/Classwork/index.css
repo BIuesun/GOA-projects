@@ -1,0 +1,14 @@
+div {
+    height: 200px;
+    width: 400px;
+    border: 15px solid gray;
+    padding: 50px;
+    margin: 20px;
+  }
+
+  /* box მოდელი არის ყუთი რომელიც აკრავს ყოველ html elements */
+  /*  height ცვლის contentis სიმაღლის პარამეტრს */
+  /* width ცვლის contentis სიგანის პარამეტრს */
+  /* border აკრავცს პადდინგს და კონტენტს */
+  /* padding კონტენტის გარშემო ქმნის ადგილს*/
+  /* margin ქმნის ადგილს ბორდერის გარეთ*/
