@@ -1,0 +1,49 @@
+
+li {
+    float: left;
+  }
+  
+  a {
+    display: block;
+    padding: 8px;
+    background-color: lightgray;
+  }
+
+
+a:link {
+    color: red;
+  }
+  
+
+  a:visited {
+    color: green;
+  }
+
+  a:active {
+    color: blue;
+  }
+
+  div {
+    width: 900px;
+    height: 700px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+
+  p {
+    font-size: 50px;
+  }
+
+  button {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background-color: white; 
+    color: black; 
+    border: 2px solid green;
+  }
+  button:hover {
+    background-color: green;
+    color: white;
+  }
