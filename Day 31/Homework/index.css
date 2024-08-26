@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html {
+    font-family: "Roboto", sans-serif; /* ცვლის ფონტს */
+    height: 100%; /* ცვლის სიმაღლეს */
+    margin: 0; /* ელემენტებს გარშემო ქმნის სივრცეს */
+    display: flex; 
+    justify-content: center; /* ცენტრავს ცონტენტს */
+    align-items: center;/* ცენტრავს ცონტენტს */
+    background-color: lightblue; /* ცვლის უკანა ფონის ფერს */
+}
+
+h1 {
+    font-weight: 400;
+    color: cadetblue;
+    margin: 0; /* აშორებს თვითონ დაყენებულ მარგინს*/
+    padding: 0; /*აშორებს თვითონ დაყენებულ პადინგს*/
+    line-height: 1; /* ხაზის სიმაღლე*/
+}
+
+#second_id {
+    color: white;
+}
+
+#first_div {
+    display: flex;
+    width: 600px;  /* კონტეინერისთვის აყენებს სიგანეს */
+    height: 400px; /* კონტეინერისთვის აყენებს სიმაღლეს  */
+    box-sizing: border-box;
+}
+
+#left_div, #right_div {
+    flex: 1; /* თითო div იკავებს 50%ს fıst_dıv-ის */
+    display: flex;
+    flex-direction: column; /* ვერტიკალურად დასალაგებლად */
+    align-items: center; /* გაცენტვრა */
+    justify-content: flex-start; /*ცონტენტს ზევით აყენებს*/
+    height: 100%; /* აკავებინებს first_div ის მთლიან სიმაღლეს */
+    padding-top: 20px; /* ამატებს პადინგს ზევით */
+}
+
+#left_div {
+    background-color: white; /* უკანა ფონის ფერი*/
+}
+
+#right_div {
+    background-color: cornflowerblue; /*უკანა ფონის ფერი */
+}
+
+#general_inf {
+    text-align: center;
+    margin: 0;
+}
+
+
+#title:focus {
+    outline: none;
+}
+
+
+#last_name , #first_name , #company_name , #Business_Area ,#street , #additional_information, #Zip_code ,#phone_number , #email{
+    width: 200px; /* სიგანე */
+    margin-top: 13px; /* ელემენტებს შორის დაშორება */
+    box-sizing: border-box; /* რათა პადინგმა ხელი არ შეუშალოს სიგანეს */
+    border-radius: 6px;
+    border-top: 0;
+    border-left: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1;
+}
+
+
+#last_name , #first_name , #company_name , #Business_Area:focus {
+    outline-color: gray;
+}
+
+#position,#title{
+    border-top: 0;
+    border-left: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1;
+    width: 250px ;
+    border-color: lightgray;
+}
+
+#place,#country {
+    border-top: 0;
+    border-left: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1;
+    width: 250px ;
+    background-color: cornflowerblue;
+
+}
+
+#position:focus {
+    outline: none;
+}
+
+#street , #additional_information, #Zip_code ,#phone_number , #email:focus {
+    outline: none;
+}
+
+#submit {
+    margin-top: 15px;
+    width: 100px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+}

@@ -1,0 +1,20 @@
+/* დაულაგებელი სია */
+ul {
+    /* შემოკლებული */
+    list-style:disc,outside,none ;
+    /* ვრცელი  */
+    list-style-type: disc ;   /* უცვლის დანომვრის სტილს */
+    list-style-position: outside; /* უცვლის დანომვრის პოზიციას */
+    list-style-image: none;  /* უცვლის დანომვრის ფოტოს (არ არის რეკომენდირებული) */
+    color:greenyellow
+}
+
+/* დალაგებული სია */
+ol {
+        /* შემოკლებული */
+    list-style:upper-roman,inside,none ;
+        /* ვრცელი  */
+    list-style-type: upper-roman;  /* უცვლის დანომვრის სტილს */
+    list-style-position: inside; /* უცვლის დანომვრის პოზიციას */
+    list-style-image: none;  /* უცვლის დანომვრის ფოტოს (არ არის რეკომენდირებული) */
+}

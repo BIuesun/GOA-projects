@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="first_div">
+        <!-- Left Div -->
+        <div id="left_div">
+            <h1 id="General_inf">General Information</h1>
+            <input type="text" placeholder="First Name" required id="first_name">
+            <input type="text" placeholder="Last Name" required id="last_name">
+            <br>
+            <select name="title" id="title">
+                <option value="Commercial bank">Commercial bank</option>
+                <option value="Investment banking">Investment banking</option>
+                <option value="Retail banking">Retail banking</option>
+                <option value="Cooperative banks">Cooperative banks</option>
+                <option value="Payments banks">Payments banks</option>
+                <option value="Public sector banks">Public sector banks</option>
+            </select>
+            <br>
+            <select name="position" id="position">
+                <option value="Financial Analyst">Financial Analyst</option>
+                <option value="Loan Officer">Loan Officer</option>
+                <option value="Asset management">Asset management</option>
+                <option value="Auditor">Auditor</option>
+                <option value="Banking Associate">Banking Associate</option>
+                <option value="Internal Auditor">Internal Auditor</option>
+            </select>
+            <input type="text" id="company_name" required placeholder="Company name">
+            <input type="text" id="Business_Area" required placeholder="Business Area">
+        </div>
+
+        <!-- Right Div -->
+        <div id="right_div">
+            <h1 id="second_id">Contact Details</h1>
+            <input type="text" required placeholder="Street + Nr" id="street">
+            <input type="text" required placeholder="Additional Information" id="Additional_information">
+            <input type="number" required placeholder="Zip Code" id="Zip_Code">
+            <select name="Place" id="Place">
+                <option value="Apartament">Apartament</option>
+                <option value="House">House</option>
+            </select>
+            <select name="Country" id="Country">
+                <option value="" disabled selected>Country</option>
+                <option value="Georgia">Georgia</option>
+                <option value="USA">USA</option>
+                <option value="Spain">Spain</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="UK">UK</option>
+            </select>
+            <input id="phone_number" type="number" placeholder="Phone Number">
+            <input id="Email" type="email" placeholder="Your Email">
+            <button id="Submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
