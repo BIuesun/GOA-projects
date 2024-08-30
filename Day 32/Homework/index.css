@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+body {
+    font-family:"Nerko One" cursive ,"Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+}
+
+#main, #main2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 600px; 
+    height: 200px;
+    padding: 20px;
+    margin: 0; 
+}
+
+.content {
+    height: 100px;
+    width: 250px;
+    margin: 0 10px;
+    background-color: white; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+#first {
+    background-image: url(./Tbilisi.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#second {
+    background-image: url(./Tokyo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#third {
+    background-image: url(./New\ York.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 33px;
+}
+#fourth {
+    background-image: url(./Dubai.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#fifth {
+    background-image: url(./Paris.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sixth {
+    background-image: url(./Madrid.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#first:hover, #second:hover, #third:hover, #fourth:hover, #fifth:hover, #sixth:hover {
+    transform: scale(1.05);
+    filter: brightness(0.);
+    transition-duration: 0.2s;
+}

@@ -1,0 +1,21 @@
+#first {
+    height: 200px;
+    width: 400px;
+    border: 15px solid lime;
+    padding: 50px;
+    margin: 20px;
+    box-sizing: border-box;
+  }
+
+
+
+  #second {
+    height: 100px;
+    width: 300px;
+    border: 10px solid blue;
+    padding: 25px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+/* The box-sizing უფლებას გვაძლევს პადდინგი და ბორდერი height x width ანუ ნამდვილ სიდიდესთან ჩავთვალოთ */

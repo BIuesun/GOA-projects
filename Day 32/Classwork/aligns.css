@@ -1,0 +1,25 @@
+.parent {
+    width: 1000px;
+    height: 1000px;
+    border: 3px solid gray;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.child {
+    width: 300px;
+    height: 300px;
+    border: 2px solid cyan;
+    background-color: black;
+}
+
+/* display-თ ვაყენებთ თუ როგორი ტიპის box გვინდა */
+/*  justify-content ვცვლით მთავარი მიმართულების ადგილს */
+/* align-items ვცვლით მეორე მიმართულების ადგილს  */
+/* flex-direction ვცვლით თუ რა მიმართულებითაა*/
+

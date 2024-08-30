@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;  /* Width of the div */
+    height: 120px; /* Height of the div */
+    margin: 15px; /* Adds 15px margin between the blocks */
+    background-color: antiquewhite; /* Background color for the blocks */
+    border-radius: 15px; /* Rounds the edges of the divs */
+    box-sizing: border-box; /* Ensures padding and border are included in the width/height */
+}
+
+.block p {
+    margin: 0;
+    color: white; /* Text color */
+    font-size: 24px; /* Font size of the text */
+}
+
+
+#first_child {
+    width: 100%;  /* Takes the full width of the block */
+    height: 100%; /* Takes the full height of the block */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first_child img {
+    width: 100px;  /* Set the width of the image */
+    height: 100px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image a circle */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin-right: 15px; /* Space between the image and other content */
+}
