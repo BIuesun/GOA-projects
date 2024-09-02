@@ -1,0 +1,19 @@
+div {
+    /* mokle */
+    padding: 20px 20px 20px 20px;
+    margin: 30px 10px 30px 10px;
+    /* sruli */
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+  /* border აკრავცს პადდინგს და კონტენტს */
+  /* padding კონტენტის გარშემო ქმნის ადგილს*/
+  /* margin ქმნის ადგილს ბორდერის გარეთ*/

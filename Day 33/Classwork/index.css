@@ -1,0 +1,14 @@
+#first {
+    background-color: black;
+    border: 3px; 
+    padding: 20px; /* dashoreba contentsa da borders shoris */
+    margin-bottom: 5px;  /* dashoreba html elementebis shoris */
+    color: aliceblue;
+}
+#second {
+    background-color: cyan;
+    border: 4px; 
+    padding: 20px; /* dashoreba contentsa da borders shoris */
+    margin-top: 5px;  /* dashoreba html elementebis shoris */
+}
+
