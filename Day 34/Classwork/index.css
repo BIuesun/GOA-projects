@@ -1,0 +1,31 @@
+body , html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    position: relative;
+}
+
+img {
+    width: 200px;
+}
+
+.notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+
+    position: absolute;
+    bottom: 65px;
+    left: 120px;
+}
+/* relative posicia tavis sawyis posicias inarchunebs da ise icvlis adgils */
+/* absolute ki kargavs tavis sawyis posicias */
