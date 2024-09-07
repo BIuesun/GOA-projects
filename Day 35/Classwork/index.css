@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+body {
+    font-family:"Nerko One" cursive ,"Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 600px;
+    height: 500px;
+    border: none;
+}
+
+.child {
+    background-color: aqua;
+    border: 3px solid red;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#first {
+    background-image: url(./Dubai.png);
+}
+
+#second {
+    background-image: url(./Tokyo.png);
+}
+
+#third {
+    background-image: url(./Tbilisi.png);
+}
+
+#fourth {
+    background-image: url(./New\ York.png);
+}
+
+#fifth {
+    background-image: url(./paris.png);
+}
+
+#sixth {
+    background-image: url(./Madrid.png);
+}
