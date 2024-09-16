@@ -1,0 +1,18 @@
+.parent {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+
+.parent:hover {
+    transform: scale(2);
+    transform: rotate(45deg);
+    transform-origin: right ;
+}
+
+.parent:active {
+    transform: scale(0.5);
+    transform: rotate(45deg);
+    transform-origin: left ;
+}
+

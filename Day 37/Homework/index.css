@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    height: 350px;
+    width: 350px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image.png);
+}
+
+
+.parent:hover {
+    transform: scale(1.5);
+    transition-duration: 500ms;
+
+}
+
+.parent:active {
+    transform: scale(1.2);
+    transition-duration: 300ms;
+}

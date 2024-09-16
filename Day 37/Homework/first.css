@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+}
+
+.parent:hover {
+    transform: translate(30px,30px);
+    transform: scale(1.5);
+    transform: rotate(50deg);
+    transform-origin: right;
+}
+
+.parent:focus {
+    transform: translate(-30px,-30px);
+    transform: scale(0.5);
+    transform: rotate(50deg);
+    transform-origin: left;
+}
+

@@ -1,0 +1,13 @@
+.parent {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+
+.parent:hover {
+    transform: translate(50px,50px);
+}
+
+.parent:active {
+    transform: translate(-50px,-50px);
+}
