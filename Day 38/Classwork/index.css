@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+div {
+    background-color: green;
+    height: 500px;
+    width: 500px;
+
+    transition-property: background-color, transform; /* უნდა მივუთითოთ თუ რას შევუცვალოთ პარამეტრები */
+    transition-duration: 2s , 1s; /* ვუთითებთ თუ ძველიდან ახალზე რამდენი ხანი მოანდომოს გადასვლამ */
+    transition-timing-function: ease-in, ease-out; /* ეს პარამეტრი ცვლის თუ როგორ ხდება გადასვლა სხვადასხვა დროის მონაკვეთში (ჩქარა, ნელა) */
+    transition-delay: 500ms 500ms ; /*ამით ვუცვლით თუ რამდენიხანი უნდა "დაეოლოდოს" სანამ ტრანსაცია დაიწყება  */
+}
+
+div:hover {
+    background-color: blue;
+    transform: scale(0.5) rotate(45deg);
+}
+
+/* ease იმატებს სიჩქარეს შუაში და ბოლოსკენ ნელდება */
+/* linear ყოველთვის თანაბარი სიჩქარე აქვს */
+/* easer-in იწყება ნელა და იმატებს სანამ არ დამთავრდება */
+/* ease-out იწყება ჩქარა და ნელდება დასასრულამდე */
+/* ease-in-out იწყება ნელა შემდეგ უმატებს სიჩქარეს და შემდეგ ისევ ნელდება  */

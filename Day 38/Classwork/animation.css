@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+
+    animation-name: animationn;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+}
+
+@keyframes animationn {
+
+    0% {
+        background-color: aqua;
+    }
+
+    20% {
+        background-color: red;
+    }
+
+    30% {
+        background-color: greenyellow;
+    }
+
+    50% {
+        background-color: blueviolet;
+    }
+
+    70% {
+        background-color: wheat;
+    }
+
+    100% {
+        background-color: green;
+    }
+
+
+
+}

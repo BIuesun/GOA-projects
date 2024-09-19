@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parent {
+    background-color: blue;
+
+    width: 400px;
+    height: 30px;
+}
+
+.child {
+    width: 10px;
+    height: 30px;
+    background-color: green;
+
+    animation-name: loading;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes loading {
+    10% {
+        width: 20px;
+    }
+
+    30% {
+        width: 60px;
+    }
+
+    100% {
+        width: 400px;
+    }
+
+}
