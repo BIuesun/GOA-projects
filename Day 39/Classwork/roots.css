@@ -1,0 +1,34 @@
+/* :root ვიყენებთ დროის დასაზოგად რომ შევინახოთ რაიმე პარამეტრი რომელსაც გამოვიყენებთ რამდენიმეჯერ მომავალში */
+
+:root {
+    --main-clr: pink;
+    --secondary-clr: blue;
+    --others: greenyellow;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: var(--main-clr);
+}
+
+.first {
+    color: var(--secondary-clr)
+}
+
+.second {
+    color: var(--others)
+}
+
+
+
+div {
+    transform: scale(2);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(2.5);
+    -ms-transform: scale(1); 
+}

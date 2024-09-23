@@ -1,0 +1,54 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width: 5000px) {
+ .navig {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: gray;
+    padding: 10px 0;
+    margin: 0;
+
+
+}
+
+.navig a {
+    text-decoration: none;
+}
+   
+}
+
+
+@media (max-width: 1000px) {
+    .navig {
+        gap: 40px; 
+    }
+}
+
+@media (max-width: 750px) {
+    .navig {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navig {
+        gap: 20px; 
+        flex-direction: column;
+        align-items: center; 
+    }
+}
+
+@media (max-width: 250px) {
+    .navig {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center; 
+    }
+}
