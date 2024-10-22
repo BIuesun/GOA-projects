@@ -1,0 +1,22 @@
+a {
+    text-decoration: none; 
+    position: relative; 
+}
+
+a div {
+    position: relative; 
+}
+
+a div::after {
+    content: ''; 
+    width: 0%; 
+    background-color: red; 
+    position: absolute; 
+    bottom: -5px; 
+    height: 2px; 
+    transition: width 0.3s ease;
+}
+
+a:hover div::after {
+    width: 100%; 
+}
