@@ -16,6 +16,6 @@ function isFirstLarger(n1, n1) {
 
 // elementis damateba sityva element: tan
 function elem(element) {
-    return "Element: " + element;
+    console.log("Element: " + element);
 
 }
