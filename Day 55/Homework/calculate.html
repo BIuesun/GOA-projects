@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whats calculating?</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <button onclick="calculate()">Start</button>
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            // shevqmnat ori const masivi da parsefloatit amovagebinot ricxvi radgan prompti sul strings abrunebs
+            const num1 = parseFloat(prompt("Enter the first number:"));
+            const num2 = parseFloat(prompt("Enter the second number:"));
+
+         
+            // shevkribot
+            const sum = num1 + num2;
+            const difference = num1 - num2;
+
+            // gamovitanot alertit
+            alert(
+                `Results:\n` +
+                `The sum of ${num1} and ${num2} is: ${sum}\n` +
+                `The difference between ${num1} and ${num2} is: ${difference}`
+            );
+        }
+    </script>
+</body>
+</html>
