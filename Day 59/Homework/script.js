@@ -11,7 +11,7 @@ function validateForm() {
         return;
     }
 
-    // shemowmeba tu yvela sworia
+    // shemowmeba tu yvela sworia.
     const userData = {
         FirstName: firstName,
         LastName: lastName,

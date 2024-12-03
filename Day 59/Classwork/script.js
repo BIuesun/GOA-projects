@@ -10,4 +10,4 @@ console.log(3 > 5);    // false
 console.log(10 !== 10); // false
 console.log(19 > 20); // false
 console.log(7 < 7);     // false
-console.log(100 == 101); // false
+console.log(100 == 101); // false.
