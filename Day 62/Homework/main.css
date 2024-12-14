@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-size:xx-large
+}
+
+
+.main{
+    width:500px;
+    height:500px;
+    background:white;
+}
+
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

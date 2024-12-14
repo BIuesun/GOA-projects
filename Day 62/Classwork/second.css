@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    background-color: white;
+}
+
+#text {
+    font-size: 30px;
+    transition: opacity 1s ease-in-out;
+    padding: 10px 20px;
+    margin-bottom: 20px; 
+    background-color: #fff; 
+    border-radius: 8px;
+}
+
+
+.hidden {
+    opacity: 0;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: limegreen;  
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: green; 
+}
