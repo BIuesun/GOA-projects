@@ -54,7 +54,7 @@ function stayHome(weatherRainy,weatherSnowy,havePlans){
 
 // 9.შექმენით ფუნქცია: "უნდა გავიდეთ სირბილზე თუ არა"
 function goJogging(weatherClean,sportKicksAvailabl,friendReady){
-    return (weatherClean && sportKicksAvailabl) &&friendReady
+    return (weatherClean && sportKicksAvailabl) || friendReady
 }
 //..........................................................................................
 
