@@ -1,6 +1,6 @@
 let human = {
     name: "Luka",
-    age: 15,
+    age: 16,
     gender: "male"
   };
   
