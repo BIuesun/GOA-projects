@@ -4,7 +4,7 @@ let textOutput = document.getElementById("outPut");
 let intervalId;
 function send(){
     clearInterval(intervalId);
-    let inputText =inputNumberForm.value;
+    let inputText =inputTextForm.value;
     let inputInterval = parseInt(inputNumberForm.value , 10);
 
     intervalId = setInterval(function(){
