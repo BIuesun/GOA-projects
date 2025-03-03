@@ -7,4 +7,4 @@ let intervalID = setInterval(function() {
     hours.textContent = currentDate.getHours();
     minutes.textContent = currentDate.getMinutes();
     seconds.textContent = currentDate.getSeconds();
-}, 500)
+}, 1000)
