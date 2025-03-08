@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .class-element {
+         color: blue;
+          }
+        body{
+            margin:0;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            width: 100%;
+            gap:50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Hello, World!</h1>
+    <p id="paragraph">Random.</p>
+    
+    <div class="class-element">Class elem 1</div>
+    <div class="class-element">Class elem 2</div>
+    
+    <span>TagName elem 1</span>
+    <span>TagName elem 2</span>
+    
+    <button onclick="changeContent()">text content</button>
+    <button onclick="changeStyle()">change style</button>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
