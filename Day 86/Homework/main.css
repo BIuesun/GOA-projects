@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+div {
+    width: 170px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+    border: 2px solid black;
+    color: white;
+}
+
+.CLS {
+    font-style: italic;
+    border-radius: 10px;
+}
