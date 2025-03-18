@@ -1,0 +1,30 @@
+body{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img{
+    width:500px;
+    height:500px;
+    position: relative;
+    right:300px;
+}
+
+.languages{
+    width:300px;
+    height:80px;
+    background:rgb(60, 60, 220);
+    border-radius:16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+}
+.languages:hover{
+    background:blue;
+    transition: 0.3s;
+}

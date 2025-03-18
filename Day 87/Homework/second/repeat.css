@@ -1,0 +1,36 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: royalblue;
+  }
+  
+  p {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 70%;
+  }
+  
