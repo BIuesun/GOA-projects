@@ -20,3 +20,5 @@ print(x[2:6:1])
 # 4.
 def reverse(text):
     return text[::-1]
+
+print(reverse("hello"))

@@ -1,7 +1,10 @@
-function reverse(userInput){
-    let reverse = ""
-    for(let i = userInput.length - 1; i >= 0; i--){
-        reverse += userInput[i];
+let userInput = prompt("Please enter text: ");
+function reverseString(text) {
+    let reversed = "";
+    for (let i = text.length - 1; i >= 0; i--) {
+        reversed += text[i];
     }
-    return reverse;
+    return reversed;
 }
+
+alert("Reversed text: " + reverseString(userInput));
