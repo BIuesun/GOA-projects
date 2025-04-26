@@ -1,17 +1,17 @@
-// // 1.addevent listener
-// let mainDiv = document.querySelector(".main-container");
-// let button = document.querySelector(".button");
-// button.addEventListener("click",addDiv);
+// 1.addevent listener
+let mainDiv = document.querySelector(".main-container");
+let button = document.querySelector(".button");
+button.addEventListener("click",addDiv);
 
-// function addDiv(){
-//     let newDiv = document.createElement("div");
-//     newDiv.style.width = "100px"
-//     newDiv.style.height = "100px"
-//     newDiv.style.background = "black"
-//     newDiv.style.margin = "5px"
-//     mainDiv.appendChild(newDiv);
+function addDiv(){
+    let newDiv = document.createElement("div");
+    newDiv.style.width = "100px"
+    newDiv.style.height = "100px"
+    newDiv.style.background = "black"
+    newDiv.style.margin = "5px"
+    mainDiv.appendChild(newDiv);
 
-// }
+}
 
 
 //2.

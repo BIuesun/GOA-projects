@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Tracker</title>
+</head>
+<body>
+
+  <input type="text" id="myInput" placeholder="write here">
+
+  <script>
+    const input = document.getElementById('myInput');
+    let prevLength = 0;
+
+    input.addEventListener('input', function () {
+      const currLength = input.value.length;
+
+      if (currLength > prevLength) {
+        console.log(`added: ${currLength - prevLength}`);
+      } else if (currLength < prevLength) {
+        console.log(`removed: ${prevLength - currLength}`);
+      }
+
+      prevLength = currLength;
+    });
+  </script>
+
+</body>
+</html>
