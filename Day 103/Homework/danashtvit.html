@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slider</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f4;
+    }
+
+    .slider {
+      width: 400px;
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 10px;
+    }
+
+    .controls button {
+      background: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slider">
+    <div class="slides" id="slides">
+      <img src="https://picsum.photos/id/1015/400/250" alt="1">
+      <img src="https://picsum.photos/id/1016/400/250" alt="2">
+      <img src="https://picsum.photos/id/1018/400/250" alt="3">
+      <img src="https://picsum.photos/id/1020/400/250" alt="4">
+      <img src="https://picsum.photos/id/1021/400/250" alt="5">
+    </div>
+    <div class="controls">
+      <button onclick="prevSlide()">⟨</button>
+      <button onclick="nextSlide()">⟩</button>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.getElementById("slides");
+    const totalSlides = 5;
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.style.transform = `translateX(-${index * 400}px)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides; 
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; 
+      showSlide(currentIndex);
+    }
+  </script>
+
+</body>
+</html>

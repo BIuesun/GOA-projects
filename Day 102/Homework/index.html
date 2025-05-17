@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Bubbling</title>
+</head>
+<body>
+  <div id="parentDiv" style="background-color: lightblue; padding: 50px;">
+    <button id="childButton">Click Me!</button>
+    <div id="childDiv" style="background-color: aquamarine; padding: 40px;">
+        <div id="grandchildDiv" style="background-color: aqua; padding: 20px;"></div>
+    </div>
+  </div>
+
+  <button id="bodyBtn">Click</button>
+
+  <button id="firstBtn">
+    first
+    <button id="secondBtn">
+        second
+        <button id="thirdBtn">
+            third
+        </button>
+    </button>
+  </button>
+  <script src="./script.js"></script>
+</body>
+</html>
