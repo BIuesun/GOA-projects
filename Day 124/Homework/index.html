@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level 124</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .counter, .check-word, .toggle-image, .add-list {
+    margin-bottom: 30px;
+  }
+  button {
+    margin: 0 5px;
+    padding: 5px 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="counter">
+  <button id="decrement">-</button>
+  <span id="count">0</span>
+  <button id="increment">+</button>
+</div>
+
+
+<div class="check-word">
+  <input type="text" id="wordInput" placeholder="Type something">
+  <button id="checkBtn">Check</button>
+  <p id="checkResult"></p>
+</div>
+
+
+<div class="toggle-image">
+  <img id="myImg" src="https://via.placeholder.com/150" alt="Placeholder">
+  <br>
+  <button id="toggleBtn">Show/Hide</button>
+</div>
+
+<div class="add-list">
+  <input type="text" id="itemInput" placeholder="Enter item">
+  <button id="addBtn">დამატება</button>
+  <ul id="itemList"></ul>
+</div>
+
+<script>
+
+  let count = 0
+  const countEl = document.getElementById("count")
+  document.getElementById("increment").addEventListener("click", () => {
+    count++
+    countEl.textContent = count
+  })
+  document.getElementById("decrement").addEventListener("click", () => {
+    count--
+    countEl.textContent = count
+  })
+
+  // 2) 
+  document.getElementById("checkBtn").addEventListener("click", () => {
+    const val = document.getElementById("wordInput").value.trim().toLowerCase()
+    const result = val === "hello" ? "Welcome!" : "Try again!"
+    document.getElementById("checkResult").textContent = result
+  })
+
+  // 3)
+  const img = document.getElementById("myImg")
+  document.getElementById("toggleBtn").addEventListener("click", () => {
+    if(img.style.display === "none") {
+      img.style.display = "block"
+    } else {
+      img.style.display = "none"
+    }
+  })
+
+  // 4)
+  const ul = document.getElementById("itemList")
+  document.getElementById("addBtn").addEventListener("click", () => {
+    const val = document.getElementById("itemInput").value.trim()
+    if(val){
+      const li = document.createElement("li")
+      li.textContent = val
+      ul.appendChild(li)
+      document.getElementById("itemInput").value = ""
+    }
+  })
+</script>
+
+</body>
+</html>

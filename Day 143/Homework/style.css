@@ -1,0 +1,33 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100%;
+}
+div{
+    height:150px;
+    width:250px;
+    padding:50px;
+    position: relative;
+}
+.textChanger{
+    background:gray;
+    right: 600px;
+    bottom:260px;
+}
+.Counter{
+    background:purple;
+    right: 600px;
+    bottom:260px;  
+}
+.BackgroundChanger{
+    right: 600px;
+    bottom:260px;  
+}
+.btn{
+    display:grid;
+
+    height:30px;
+    width:150px;
+}

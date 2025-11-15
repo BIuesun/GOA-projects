@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="input1" placeholder="Input 1">
+<input type="text" id="input2" placeholder="Input 2">
+<input type="text" id="input3" placeholder="Input 3">
+<button id="saveBtn">Save</button>
+
+<script>
+    const arr = [1, 2, 3, 4, 5];
+    localStorage.setItem("myArray", JSON.stringify(arr));
+
+    const storedArr = JSON.parse(localStorage.getItem("myArray"));
+    console.log(storedArr);
+document.getElementById("saveBtn").addEventListener("click", () => {
+  const val1 = document.getElementById("input1").value;
+  const val2 = document.getElementById("input2").value;
+  const val3 = document.getElementById("input3").value;
+
+  const inputs = { val1, val2, val3 };
+  localStorage.setItem("inputsData", JSON.stringify(inputs));
+
+  const storedInputs = JSON.parse(localStorage.getItem("inputsData"));
+  console.log(storedInputs);
+});
+</script>
+
+</body>
+</html>
